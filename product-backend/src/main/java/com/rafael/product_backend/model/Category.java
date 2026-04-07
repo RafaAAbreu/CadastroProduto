@@ -1,21 +1,19 @@
 package com.rafael.product_backend.model;
 
-public class Product {
+public class Category {
     
-    // Atributos do produto
+    // Atributos da categoria
     private int id;
     private String name;
-    private double price;
 
     //Método construtor
-    public Product(int id, String name, double price) {
+    public Category(int id, String name) {
         this.id = id;
         this.name = name;
-        this.price = price;
     }
 
     //Construtor vazio
-    public Product() {
+    public Category() {
     }
 
     // Métodos getters e setters
@@ -24,8 +22,6 @@ public class Product {
     }
     public void setId(int id) {
         this.id = id;
-    //  this.atributo = parametro; 
-    // para diferenciar o atributo do parâmetro, usamos o this. para referenciar o atributo da classe.
 
     }
     public String getName() {
@@ -34,11 +30,6 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
-    public double getPrice() {
-        return price;
-    }
-    public void setPrice(double price) {
-        this.price = price;
-    }
+
 
 }
